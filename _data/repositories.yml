@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - data-sandbox
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - data-sandbox/nlp-brewer-finder
+  - data-sandbox/ml-bluebikes-forecasting
+  - data-sandbox/ml-sandbox
+  - data-sandbox/stats-sandbox
