@@ -9,9 +9,9 @@ category: work
 
 #### The Problem
 
-Imagine you're a brewery-goer visiting a new area. To find a brewery to try, you might use a tool like Google Maps which is great for finding and visualizing all nearby breweries. Now imagine you're looking for a place that has outdoor seating, serves food, and is dog friendly. With Google Maps you'd next have to click through each individual brewery listing, look through the pictures, and look through the reviews to gain a sense of what offerings are available at each place.
+Imagine you're a brewery-goer visiting a new area. To find a place to try you might start with a tool like Google Maps, which is great for finding and visualizing all nearby breweries. Now imagine you're looking for a place that has outdoor seating, serves food, and is dog friendly. With Google Maps you'd next have to click through each individual brewery listing, look through the pictures, and look through the reviews to gain a sense of what offerings are available at each place.
 
-#### brewyou
+#### One Centralized App
 
 To streamline this process, I created the app [brewyou](https://brewyou.streamlit.app/). In this one central interface, users can enter an address, visualize all nearby breweries, and filter out the options based on what offerings they’re looking for.
 
