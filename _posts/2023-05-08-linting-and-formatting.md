@@ -7,7 +7,7 @@ tags:
 categories:
 ---
 
-Messy code may still work functionally, but is hard to read and maintain. **Linting** identifies syntax and style issues in your Python code, which helps maintain coding best practices and minimize errors. 
+Messy code may still work functionally, but is hard to read and maintain. **Linting** identifies syntax and style issues in your Python code, which helps maintain coding best practices and minimize errors.
 
 Similarly, **formatting** restructures how the code looks, helping readability and consistency across multiple files and authors.
 
@@ -15,7 +15,7 @@ There are many linters and formatters to choose from in Python. Rather than disc
 
 ### Enable Linting in VS Code
 
-First step is to install `flake8` in your environment with `pip install flake8` (or `python -m pip install flake8` if in a virtual environment). Next, linting in VS Code can be enabled by the following: 
+First step is to install `flake8` in your environment with `pip install flake8` (or `python -m pip install flake8` if in a virtual environment). Next, linting in VS Code can be enabled by the following:
 
 1. Open `Settings` menu with `⌘,`
 2. Search `flake8`
@@ -37,3 +37,5 @@ The last step in setting up a linting workflow is to set it to run automatically
 3. Enable the option `Python>Linting: Lint on Save`
 4. Search `notebook`
 5. Enable the option `Notebook>Format On Save: Enabled`
+
+**Update:** Lately I was having issues with automatic formatting on save not working. After some debugging, the issue seems to have been resolved by reinstalling (or maybe installing, not positive I had it before) the `autopep8` extension for VSCode.
