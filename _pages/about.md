@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic2.jpg
   image_circular: false # crops the image to make it circular
   # address: >
   #   <p>555 your office number</p>
@@ -23,7 +23,7 @@ social: false  # includes social icons at the bottom of the page
 <br>
 Welcome to my digital sandbox. ⛱
 
-I'm a data scientist who worked as a mechanical engineer, consultant, and researcher in the past. 
+I'm a data scientist who worked as a mechanical engineer, consultant, and researcher in the past.
 
 I make [open-source projects](https://data-sandbox.github.io/projects/) and [write](https://data-sandbox.github.io/blog/) about data for fun. I like trails, bikes, brews, and sourdough. 🏔🚲🍻🥖
 <br>
