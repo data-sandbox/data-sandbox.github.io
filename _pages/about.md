@@ -23,9 +23,11 @@ social: false  # includes social icons at the bottom of the page
 <br>
 Welcome to my digital sandbox. ⛱
 
-I'm a data scientist who worked as a mechanical engineer, consultant, and researcher in the past.
+I'm a software and data professional who worked as a mechanical engineer, consultant, and researcher in the past.
 
-I make [open-source projects](https://data-sandbox.github.io/projects/) and [write](https://data-sandbox.github.io/blog/) about data for fun. I like trails, bikes, brews, and sourdough. 🏔🚲🍻🥖
+I make [open-source projects](https://data-sandbox.github.io/projects/) and [write](https://data-sandbox.github.io/blog/) about tech for fun and continuous learning.
+
+I like trails, ultramarathons, bikes, and sourdough. 🏔 🏃 🚲 🥖
 <br>
 <br>
 <br>
