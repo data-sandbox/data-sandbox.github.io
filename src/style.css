@@ -24,7 +24,6 @@
   --content-width: 1160px;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -119,7 +118,6 @@ nav ul li {
 button .close-icon {
   display: none;
 }
-
 
 main {
   display: flex;
@@ -303,7 +301,6 @@ footer {
   .project-card {
     padding: 1.9rem var(--padding-side-smaller);
   }
-
 }
 
 @media screen and (max-width: 600px) {
