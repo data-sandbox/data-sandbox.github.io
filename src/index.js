@@ -1,5 +1,10 @@
+import './style.css';
+import '/assets/images/astro6.jpg';
+import '/assets/favicon/apple-touch-icon.png';
+import '/assets/favicon/favicon-32x32.png';
+import '/assets/favicon/favicon-16x16.png';
+// import '/assets/favicon/site.webmanifest';
 import loadProjects from "./projects";
-// import './style.css';
 
 loadProjects();
 
