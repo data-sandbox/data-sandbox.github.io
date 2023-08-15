@@ -1,71 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's me Marc!</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <script defer src="main.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>It's me Marc!</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <script defer src="main.js"></script>
-</head>
-
-<body>
-  <div class="layout" id="layout">
-    <nav>
-      <div class="navbar">
-        <ul class="navigation">
-          <li><a href="#top" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="https://datasandbox.hashnode.dev/" target="_blank" class="nav-link">Blog</a></li>
-          <li><a href="https://github.com/data-sandbox" target="_blank" class="nav-link">Github</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger">
-          <i class="menu-icon material-icons" id="menu-icon">menu</i>
-          <i class="close-icon material-icons" id="close-icon">close</i>
-        </button>
-      </div>
-    </nav>
-    <main>
-      <section class="hero" id="hero">
-        <div class="welcome-container" id="welcome-container">
-          <h1 class="welcome">Hey, I'm Marc!</h1>
-          <p>I'm a Software Developer and data science enthusiast. I make <a href="#projects">open-source projects</a>
-            and
-            <a href="https://datasandbox.hashnode.dev/" target="_blank">write</a> about code. When away from keyboard,
-            you can catch me on the trails running ultramarathons or skiing powder.
+  <body>
+    <div class="layout" id="layout">
+      <nav>
+        <div class="navbar">
+          <ul class="navigation">
+            <li><a href="#top" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li>
+              <a
+                href="https://datasandbox.hashnode.dev/"
+                target="_blank"
+                class="nav-link"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/data-sandbox"
+                target="_blank"
+                class="nav-link"
+                >Github</a
+              >
+            </li>
+          </ul>
+          <button class="hamburger" id="hamburger">
+            <i class="menu-icon material-icons" id="menu-icon">menu</i>
+            <i class="close-icon material-icons" id="close-icon">close</i>
+          </button>
+        </div>
+      </nav>
+      <main>
+        <section class="hero" id="hero">
+          <div class="welcome-container" id="welcome-container">
+            <h1 class="welcome">Hey, I'm Marc!</h1>
+            <p>
+              I'm a Software Developer and data science enthusiast. I make
+              <a href="#projects">open-source projects</a>
+              and
+              <a href="https://datasandbox.hashnode.dev/" target="_blank"
+                >write</a
+              >
+              about code. When away from keyboard, you can catch me on the
+              trails running ultramarathons or skiing powder.
+            </p>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <h1 class="header">About Me</h1>
+          <p>
+            Before software, I spent ten years tinkering in mechanical
+            engineering, many years working with clients in the consulting
+            world, and even dipped my toes into data science. All of these
+            different experiences have given me a fresh, unique perspective to
+            software engineering. I'm all about understanding the big picture,
+            crafting designs with users in mind, and making code as clean as
+            Marie Kondo's closet.
           </p>
-        </div>
-        <!-- <img class="avatar" src="/src/images/astro6.jpg" alt="My avatar"> -->
-      </section>
-      <section class="about" id="about">
-        <h1 class="header">About Me</h1>
-        <p>
-          Before software, I spent ten years tinkering in mechanical engineering, many years working with clients in the
-          consulting world, and even dipped my toes into data science. All of these different experiences have given me
-          a
-          fresh, unique perspective
-          to software engineering. I'm all about understanding the big picture, crafting designs with users in mind, and
-          making
-          code as clean as Marie Kondo's closet.
-        </p>
-      </section>
-      <section class="projects" id="projects">
-        <h1 class="projects-title header">Projects</h1>
-        <div class="projects-container" id="projects-container">
-        </div>
-      </section>
-    </main>
+        </section>
+        <section class="projects" id="projects">
+          <h1 class="projects-title header">Projects</h1>
+          <div class="projects-container" id="projects-container"></div>
+        </section>
+      </main>
 
-    <footer>
-      <p>Built with ♥️ ☕️ 🍺 by Marc</p>
-    </footer>
-  </div>
-
-</body>
-
+      <footer>
+        <p>Built with ♥️ ☕️ 🍺 by Marc</p>
+      </footer>
+    </div>
+  </body>
 </html>
