@@ -1,5 +1,4 @@
 function createProject(title, description, repo) {
-
   const projCard = document.createElement('div');
   projCard.classList.add('project-container');
   projCard.classList.add('project-card');
@@ -51,4 +50,4 @@ function loadProjects() {
   projects.appendChild(createProject('My Website', 'Source files for this awesome website.', 'data-sandbox.github.io'));
 }
 
-export default loadProjects
+export default loadProjects;

@@ -1,7 +1,6 @@
 import avatar from './images/avatar.jpg';
 
 function loadImages() {
-
   const avatarImg = document.createElement('img');
   avatarImg.classList.add('avatar');
   avatarImg.setAttribute('src', avatar);
@@ -11,4 +10,4 @@ function loadImages() {
   avatarContainer.appendChild(avatarImg);
 }
 
-export default loadImages
+export default loadImages;
