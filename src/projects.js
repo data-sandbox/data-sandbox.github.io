@@ -1,4 +1,4 @@
-function createProject(title, description, repo) {
+function createProject(title, description, repo, liveLink = null) {
   const projCard = document.createElement("div");
   projCard.classList.add("project-container");
   projCard.classList.add("project-card");
@@ -16,7 +16,11 @@ function createProject(title, description, repo) {
 
   const demoLink = document.createElement("a");
   demoLink.textContent = "👉 Live Demo";
-  demoLink.setAttribute("href", `https://data-sandbox.github.io/${repo}/`);
+  if (liveLink && liveLink !== "none") {
+    demoLink.setAttribute("href", liveLink);
+  } else {
+    demoLink.setAttribute("href", `https://data-sandbox.github.io/${repo}/`);
+  }
   demoLink.setAttribute("target", "_blank");
 
   const sourceLink = document.createElement("a");
@@ -24,7 +28,9 @@ function createProject(title, description, repo) {
   sourceLink.setAttribute("href", `https://github.com/data-sandbox/${repo}/`);
   sourceLink.setAttribute("target", "_blank");
 
-  projLinks.appendChild(demoLink);
+  if (liveLink !== "none") {
+    projLinks.appendChild(demoLink);
+  }
   projLinks.appendChild(sourceLink);
 
   projCard.appendChild(projTitle);
@@ -80,8 +86,26 @@ function loadProjects() {
   projects.appendChild(
     createProject(
       "My Website",
-      "Source files for this awesome website.",
+      "Source files for this custom website.",
       "data-sandbox.github.io",
+    ),
+  );
+
+  projects.appendChild(
+    createProject(
+      "Bluebikes",
+      "Boston bike demand forecasting with Python and machine learning.",
+      "ml-bluebikes-forecasting",
+      "none",
+    ),
+  );
+
+  projects.appendChild(
+    createProject(
+      "BREWYOU",
+      "Find the perfect brewery for you with Python, machine learning, and NLP.",
+      "nlp-brewer-finder",
+      "https://brewyou.streamlit.app/",
     ),
   );
 }
