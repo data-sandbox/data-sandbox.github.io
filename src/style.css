@@ -238,7 +238,7 @@ section {
 }
 
 .project-card:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
   transition: transform 0.3s ease-in;
 }
 
@@ -248,11 +248,72 @@ section {
   justify-content: space-around;
 }
 
+/* Skills */
+
+.skills {
+  padding: 1rem var(--padding-side);
+  margin-top: 2rem;
+  width: 100%;
+  color: var(--secondary-color);
+}
+
+.skills-section {
+  color: var(--white-light);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.skill-card {
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 70px;
+  font-size: 0.9rem;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+img.icon {
+  width: 70px;
+  height: auto;
+}
+
+.skill-card:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Contact form */
+
 .contact {
   padding: 1rem var(--padding-side);
   width: 100%;
   max-width: min(100%, 600px);
   align-self: flex-start;
+  margin-top: 2rem;
 }
 
 .contact-form-container .input-field {
@@ -352,7 +413,8 @@ footer {
 
   .about,
   .projects,
-  .contact {
+  .contact,
+  .skills {
     padding: 1rem var(--padding-side-smaller);
   }
 

@@ -1,9 +1,11 @@
 import "./style.css";
 import loadProjects from "./projects";
 import loadImages from "./images";
+import loadSkills from "./skills";
 
 loadImages();
 loadProjects();
+loadSkills();
 
 // Nav hamburger selections
 const burger = document.querySelector("#hamburger");
