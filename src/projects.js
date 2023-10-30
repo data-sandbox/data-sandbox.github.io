@@ -45,8 +45,16 @@ function loadProjects() {
 
   projects.appendChild(
     createProject(
+      "Energy Dash",
+      "⚡️ Interactive dashboard for US monthly energy statistics.",
+      "energy-dashboard",
+    ),
+  );
+
+  projects.appendChild(
+    createProject(
       "Etch-a-Sketch",
-      "Modern Etch-a-sketch game using JS, HTML, CSS.",
+      "✍️ Modern Etch-a-sketch game using JS, HTML, CSS.",
       "etch-a-sketch",
     ),
   );
@@ -54,7 +62,7 @@ function loadProjects() {
   projects.appendChild(
     createProject(
       "Dynamic Single Page",
-      "Restaurant website dynamically rendered by JS.",
+      "🌮 Restaurant website dynamically rendered by JS.",
       "restaurant",
     ),
   );
@@ -62,7 +70,7 @@ function loadProjects() {
   projects.appendChild(
     createProject(
       "Library App",
-      "Store your reading list in one place.",
+      "📚 Store your reading list in one place.",
       "library",
     ),
   );
@@ -70,7 +78,7 @@ function loadProjects() {
   projects.appendChild(
     createProject(
       "Tic-Tac-Toe",
-      "Tic Tac Toe game built with JS, HTML, CSS.",
+      "🧩 Tic Tac Toe game built with JS, HTML, CSS.",
       "tic-tac-toe",
     ),
   );
@@ -78,7 +86,7 @@ function loadProjects() {
   projects.appendChild(
     createProject(
       "Admin Dashboard",
-      "Responsive dashboard built with grid and flexbox.",
+      "🐱 Responsive dashboard built with grid and flexbox.",
       "admin-dashboard",
     ),
   );
@@ -86,7 +94,7 @@ function loadProjects() {
   projects.appendChild(
     createProject(
       "My Website",
-      "Source files for this custom website.",
+      "🚀 Source files for this custom website.",
       "data-sandbox.github.io",
     ),
   );
@@ -94,7 +102,7 @@ function loadProjects() {
   projects.appendChild(
     createProject(
       "Bluebikes",
-      "Boston bike demand forecasting with Python and machine learning.",
+      "🚲 Boston bike demand forecasting with Python and machine learning.",
       "ml-bluebikes-forecasting",
       "none",
     ),
@@ -103,7 +111,7 @@ function loadProjects() {
   projects.appendChild(
     createProject(
       "BREWYOU",
-      "Find the perfect brewery for you with Python, machine learning, and NLP.",
+      "🍺 Find the perfect brewery for you with Python, machine learning, and NLP.",
       "nlp-brewer-finder",
       "https://brewyou.streamlit.app/",
     ),
