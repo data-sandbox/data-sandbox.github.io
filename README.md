@@ -32,34 +32,42 @@ The site is served from the `gh-pages` branch (configured in GitHub repo Setting
 
 The `dist/` folder is what gets deployed — only the contents of `dist/` are pushed to `gh-pages`, not the full repo.
 
-### Option 1: `deploy-demo` script
+### Deployment steps
+
+The updated `dist/` build must be committed to `main` before pushing to `gh-pages`.
+
+**Step 1: Build**
 
 ```bash
-npm run deploy-demo
+npm run build
 ```
 
-This runs `npm run build` (development mode) then pushes `dist/` to `gh-pages` via git subtree. Convenient but ships an unminified build.
-
-### Option 2: Production build
+**Step 2: Commit the build to `main`**
 
 ```bash
-npm run build -- --mode production && git subtree push --prefix dist origin gh-pages
+git add dist/ && git commit -m "Build"
 ```
 
-Same as above but minifies output before deploying.
+**Step 3: Push `dist/` to `gh-pages`**
+
+```bash
+git subtree push --prefix dist origin gh-pages
+```
 
 ### If the subtree push is rejected
 
-This can happen if the `gh-pages` branch has diverged. Force-push with:
+The `gh-pages` branch can diverge from `main`'s subtree history (e.g. after a force-push or amended commit on `main`). When `git subtree push` is rejected, force-push instead:
 
 ```bash
-git push origin `git subtree split --prefix dist main`:gh-pages --force
+git push origin $(git subtree split --prefix dist main):gh-pages --force
 ```
 
 ### Typical workflow
 
 1. Make changes in `src/`
 2. Preview locally with `npm start`
-3. Commit changes to `main`: `git add . && git commit -m "your message"`
-4. Deploy: `npm run build -- --mode production && git subtree push --prefix dist origin gh-pages`
-5. Push `main` as well: `git push origin main`
+3. Commit source changes to `main`: `git add src/ && git commit -m "Some message"`
+4. Build: `npm run build -- --mode production`
+5. Commit the build: `git add dist/ && git commit -m "Build"`
+6. Deploy to `gh-pages`: `git subtree push --prefix dist origin gh-pages` (force-push if rejected)
+7. Push `main`: `git push origin main`
